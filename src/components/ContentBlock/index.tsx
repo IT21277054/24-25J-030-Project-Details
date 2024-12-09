@@ -1,7 +1,6 @@
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
-
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -42,13 +41,20 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
+          {icon === 'none' ? ( "") : (<Col lg={11} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
-          <Col lg={11} md={11} sm={11} xs={24}>
+          </Col>)}
+          
+          <Col
+            lg={icon === "none" ? 24 : 11}
+            md={icon === "none" ? 24 : 11}
+            sm={icon === "none" ? 24 : 11}
+            xs={icon === "none" ? 24 : 24}
+          >
             <ContentWrapper>
               <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              {id === 'projectIntro' ? ( <MinPara>{t(content)}</MinPara>) : (<Content>{t(content)}</Content>)}
+             
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&

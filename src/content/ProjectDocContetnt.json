@@ -1,0 +1,69 @@
+{
+    "title": "Project Documents",
+    "cards": [
+      {
+        "title": "Project Charter",
+        "text": "Download the Project Charter document that outlines the overall objectives, goals, and scope of the project. This document serves as a foundational reference for the project's direction and progress.",
+        "icon": "github.svg",
+        "button": {
+          "title": "Download",
+          "url": "/services/service-one"
+        }
+      },
+      {
+        "title": "Project Proposal",
+        "text": "Download the Project Proposal document which details the plan for the project, including the methodology, timeline, resources, and expected deliverables. This document is crucial for project approval and stakeholder alignment.",
+        "icon": "github.svg",
+        "button": {
+          "title": "Download",
+          "url": "/services/service-two"
+        }
+      },
+      {
+        "title": "Research Paper",
+        "text": "Download the Research Paper that presents the in-depth study, analysis, and findings related to the project's key themes. It provides valuable insights and data gathered through research during the project.",
+        "icon": "github.svg",
+        "button": {
+          "title": "Download",
+          "url": "/services/service-three"
+        }
+      },
+      {
+        "title": "Final Thesis",
+        "text": "Download the Final Thesis document, which is the culmination of all research, analysis, and project work. This thesis summarizes the project’s results, conclusions, and recommendations for future work.",
+        "icon": "github.svg",
+        "button": {
+          "title": "Download",
+          "url": "/services/service-four"
+        }
+      },
+      {
+        "title": "Status Document",
+        "text": "Download the Status Document which provides periodic updates on the project's progress. It includes milestones, achievements, challenges, and any adjustments made to the project’s plan.",
+        "icon": "github.svg",
+        "button": {
+          "title": "Download",
+          "url": "/services/service-five"
+        }
+      },
+      {
+        "title": "Research Logbook",
+        "text": "Download the Research Logbook that contains detailed records of research activities, observations, and notes. It helps track the progress of the research and any significant discoveries made during the project.",
+        "icon": "github.svg",
+        "button": {
+          "title": "Download",
+          "url": "/services/service-six"
+        }
+      },
+      {
+        "title": "Business Plan",
+        "text": "Download the Business Plan which outlines the strategic direction, marketing strategies, financial projections, and goals for the project’s sustainability and future growth.",
+        "icon": "github.svg",
+        "button": {
+          "title": "Download",
+          "url": "/services/service-seven"
+        }
+      }
+    ]
+  }
+  

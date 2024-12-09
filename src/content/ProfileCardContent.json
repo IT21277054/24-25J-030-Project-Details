@@ -1,0 +1,49 @@
+{
+    "title": "Team Members",
+    "cards": [
+      {
+        "name": "John Doe",
+        "role": "Frontend Developer",
+        "socialLinks": {
+          "email": "https://github.com/johndoe",
+          "linkedin": "https://www.linkedin.com/in/johndoe",
+          "twitter": "https://twitter.com/johndoe",
+          "facebook": "https://twitter.com/johndoe"
+        },
+        "avatar": "avatar.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "role": "Backend Developer",
+        "socialLinks": {
+          "email": "https://github.com/johndoe",
+          "linkedin": "https://www.linkedin.com/in/johndoe",
+          "twitter": "https://twitter.com/johndoe",
+          "facebook": "https://twitter.com/johndoe"
+        },
+       "avatar": "avatar.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "role": "Backend Developer",
+        "socialLinks": {
+         "email": "https://github.com/johndoe",
+          "linkedin": "https://www.linkedin.com/in/johndoe",
+          "twitter": "https://twitter.com/johndoe",
+          "facebook": "https://twitter.com/johndoe"
+        },
+        "avatar": "avatar.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "role": "Backend Developer",
+        "socialLinks": {
+          "email": "https://github.com/johndoe",
+          "linkedin": "https://www.linkedin.com/in/johndoe",
+          "twitter": "https://twitter.com/johndoe",
+          "facebook": "https://twitter.com/johndoe"
+        },
+        "avatar": "avatar.jpg"
+      }
+    ]
+}
