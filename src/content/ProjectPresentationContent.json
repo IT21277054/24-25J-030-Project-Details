@@ -1,0 +1,41 @@
+{
+  "title": "Project Presentations",
+  "cards": [
+    {
+      "title": "Proposal Presentation",
+      "text": "This presentation outlines the project's initial proposal, including goals, scope, and methodology. It provides a general overview of the plan and is intended for stakeholder approval.",
+      "icon": "github.svg",
+      "button": {
+        "title": "Download",
+        "url": "/services/service-one"
+      }
+    },
+    {
+      "title": "Progress Presentation-I",
+      "text": "This presentation details the first project progress, covering research, data collection, and early findings. It highlights any challenges and updates stakeholders. (50% complete)",
+      "icon": "github.svg",
+      "button": {
+        "title": "Download",
+        "url": "/services/service-two"
+      }
+    },
+    {
+      "title": "Progress Presentation-II",
+      "text": "The second progress presentation builds on the first, discussing key milestones, data analysis, and insights. It shows the project’s current status and progress. (90% complete)",
+      "icon": "github.svg",
+      "button": {
+        "title": "Download",
+        "url": "/services/service-three"
+      }
+    },
+    {
+      "title": "Final Presentation",
+      "text": "This final presentation provides a summary of the project, including the outcomes, conclusions, and recommendations. It serves as the project closure document. (100% complete)",
+      "icon": "github.svg",
+      "button": {
+        "title": "Download",
+        "url": "/services/service-four"
+      }
+    }
+  ]
+}

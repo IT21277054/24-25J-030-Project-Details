@@ -14,6 +14,10 @@ export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
 `;
 
+export const AboutContent = styled("p")`
+  margin: 1.5rem 0 2rem 0;
+`;
+
 export const StyledRow = styled(Row)`
   flex-direction: ${({ direction }: { direction: string }) =>
     direction === "left" ? "row" : "row-reverse"};
@@ -44,7 +48,8 @@ export const MinTitle = styled("h6")`
 `;
 
 export const MinPara = styled("p")`
-  font-size: 13px;
+  font-size: 17px;
+   text-align: justify;
 `;
 
 export const ButtonWrapper = styled("div")`
@@ -60,3 +65,4 @@ export const ButtonWrapper = styled("div")`
     margin-left: 20px;
   }
 `;
+
