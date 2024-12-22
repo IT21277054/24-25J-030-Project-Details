@@ -1,0 +1,26 @@
+[
+  {
+    "title": "LITERATURE SURVEY",
+    "content": "A comprehensive review of existing literature to understand the background and context of the research domain."
+  },
+  {
+    "title": "RESEARCH PROBLEM",
+    "content": "Identification of the specific problem that the research aims to address."
+  },
+  {
+    "title": "RESEARCH GAP",
+    "content": "Highlighting the gaps in existing knowledge or areas that require further investigation."
+  },
+  {
+    "title": "RESEARCH OBJECTIVE",
+    "content": "Defining the primary goals and objectives of the research."
+  },
+  {
+    "title": "METHODOLOGY",
+    "content": "Details about the research methods and approaches to be utilized."
+  },
+  {
+    "title": "TECHNOLOGIES",
+    "content": "An overview of the technologies and tools that will be used in the research."
+  }
+]

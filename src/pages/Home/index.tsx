@@ -7,15 +7,21 @@ import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import ProjectDocContetnt from "../../content/ProjectDocContetnt.json";
 import ProjectPresentationContent from "../../content/ProjectPresentationContent.json";
-import ProfieCardContent from "../../content/ProfileCardContent.json"
+import ProfieCardContent from "../../content/ProfileCardContent.json";
+import ProjectMilestones from "../../components/ProjectMilestones";
+import ProjectDomain from "../../components/ProjectDomain";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
-const CardContentBlock = lazy(() => import("../../components/CardContentBlock"))
-const ProfileCardContentBlock = lazy(() => import("../../components/ProfileCardContentBlock"))
+const CardContentBlock = lazy(
+  () => import("../../components/CardContentBlock")
+);
+const ProfileCardContentBlock = lazy(
+  () => import("../../components/ProfileCardContentBlock")
+);
 
 const Home = () => {
   return (
@@ -50,21 +56,23 @@ const Home = () => {
         id="projectIntro"
       />
       <CardContentBlock
-       direction="left"
+        direction="left"
         title={ProjectDocContetnt.title}
         cards={ProjectDocContetnt.cards}
-        id ="projectDoc"
+        id="projectDoc"
       />
-       <CardContentBlock
+      <CardContentBlock
         direction="right"
         title={ProjectPresentationContent.title}
         cards={ProjectPresentationContent.cards}
-        id ="projectPresentation"
+        id="projectPresentation"
       />
+      <ProjectMilestones title={"Project Milestones"} />
+      <ProjectDomain title={"Project Domain"} />
       <ProfileCardContentBlock
         title={ProfieCardContent.title}
         cards={ProfieCardContent.cards}
-        id ="profileCard"
+        id="profileCard"
       />
       <ContentBlock
         direction="left"
