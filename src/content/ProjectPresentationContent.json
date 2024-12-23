@@ -7,7 +7,7 @@
       "icon": "github.svg",
       "button": {
         "title": "Download",
-        "url": "/services/service-one"
+        "url": "https://drive.google.com/drive/folders/13lvIlFLw2pV3PKPTRca80oliglQ9IYCT?usp=sharing"
       }
     },
     {
@@ -16,7 +16,7 @@
       "icon": "github.svg",
       "button": {
         "title": "Download",
-        "url": "/services/service-two"
+        "url": "https://drive.google.com/drive/folders/1fVezZkZcER3R66IKla6VJdEankXUiKJ1?usp=sharing"
       }
     },
     {
@@ -25,7 +25,7 @@
       "icon": "github.svg",
       "button": {
         "title": "Download",
-        "url": "/services/service-three"
+        "url": "https://drive.google.com/drive/folders/1CRZ6JvxpGAtA7H2Gba4n6hoyEOjw7cQa?usp=sharing"
       }
     },
     {
@@ -34,7 +34,7 @@
       "icon": "github.svg",
       "button": {
         "title": "Download",
-        "url": "/services/service-four"
+        "url": "https://drive.google.com/drive/folders/1vrp87HNSLYLcBhh0pDW7wkZS5eKXdNIN?usp=sharing"
       }
     }
   ]

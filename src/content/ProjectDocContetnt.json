@@ -2,12 +2,12 @@
     "title": "Project Documents",
     "cards": [
       {
-        "title": "Project Charter",
+        "title": "TAF Document",
         "text": "Download the Project Charter document that outlines the overall objectives, goals, and scope of the project. This document serves as a foundational reference for the project's direction and progress.",
         "icon": "github.svg",
         "button": {
           "title": "Download",
-          "url": "/services/service-one"
+          "url": "https://drive.google.com/drive/folders/1kznqrL03SYempN5JB7JYBaAVskygwNxI?usp=sharing"
         }
       },
       {
@@ -16,7 +16,7 @@
         "icon": "github.svg",
         "button": {
           "title": "Download",
-          "url": "/services/service-two"
+          "url": "https://drive.google.com/drive/folders/1jkexrAXwoYhQnxczHCFFjnFuTKO37cMT?usp=sharing"
         }
       },
       {
@@ -25,7 +25,7 @@
         "icon": "github.svg",
         "button": {
           "title": "Download",
-          "url": "/services/service-three"
+          "url": "https://drive.google.com/drive/folders/1i1x8p9ZJrEuSwufFEQmzsclyFp1Y1LS7?usp=sharing"
         }
       },
       {
@@ -34,16 +34,16 @@
         "icon": "github.svg",
         "button": {
           "title": "Download",
-          "url": "/services/service-four"
+          "url": "https://drive.google.com/drive/folders/1l5iwwSjfUB_pGDbtffcS26UdfnDFWX9i?usp=sharing"
         }
       },
       {
-        "title": "Status Document",
+        "title": "Check Lists",
         "text": "Download the Status Document which provides periodic updates on the project's progress. It includes milestones, achievements, challenges, and any adjustments made to the project’s plan.",
         "icon": "github.svg",
         "button": {
           "title": "Download",
-          "url": "/services/service-five"
+          "url": "https://drive.google.com/drive/folders/1rEOh-e8_Poa_h9bA2IwUwFibwuFfYY1p?usp=sharing"
         }
       },
       {
