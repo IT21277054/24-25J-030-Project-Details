@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
-import { SvgIcon } from "../../common/SvgIcon";
+import { PngIcon, SvgIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
   Content,
@@ -42,7 +42,7 @@ const ContentBlock = ({
           direction={direction}
         >
           {icon === 'none' ? ( "") : (<Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <PngIcon src={icon} width="100%" height="100%" />
           </Col>)}
           
           <Col

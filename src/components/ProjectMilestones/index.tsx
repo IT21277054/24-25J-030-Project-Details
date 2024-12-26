@@ -6,10 +6,11 @@ import { MiddleBlockSection, ContentWrapper } from "./styles";
 import "./ProjectMilestones.scss";
 
 interface MiddleBlockProps {
+  id:string
   title: string;
 }
 
-const ProjectMilestones = ({ title }: MiddleBlockProps) => {
+const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
   const timelineRef = useRef<HTMLDivElement>(null);
 
   const isElementInViewport = (el: HTMLElement) => {
@@ -46,7 +47,7 @@ const ProjectMilestones = ({ title }: MiddleBlockProps) => {
   }, []);
 
   return (
-    <MiddleBlockSection>
+    <MiddleBlockSection id={id}>
       <Slide direction="up" triggerOnce>
         <Row justify="center" align="middle">
           <ContentWrapper>

@@ -37,9 +37,9 @@ interface ProfileCardContentBlockProps {
   t: TFunction;
 }
 
-const ProfileCardContentBlock = ({ title, cards, t }: ProfileCardContentBlockProps) => {
+const ProfileCardContentBlock = ({ title, cards, t, id}: ProfileCardContentBlockProps) => {
   return (
-    <ContentSection>
+    <ContentSection id ={id}>
      {/* <Zoom duration={1000} delay={300} triggerOnce> */}
       <h2>{t(title)}</h2>
       <Row gutter={[16, 16]}>

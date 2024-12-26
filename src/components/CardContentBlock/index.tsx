@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { Fade , Zoom} from "react-awesome-reveal";
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
+import { PngIconDoc, SvgIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
   CardWrapper,
@@ -30,7 +30,7 @@ interface CardContentBlockProps {
   direction: "left" | "right";
 }
 
-const CardContentBlock = ({ title, cards, t, direction }: CardContentBlockProps) => {
+const CardContentBlock = ({ title, cards, t, direction, id }: CardContentBlockProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -42,7 +42,7 @@ const CardContentBlock = ({ title, cards, t, direction }: CardContentBlockProps)
 
 
   return (
-    <ContentSection ref={ref}>
+    <ContentSection ref={ref} id={id}>
       <Zoom duration={1000} delay={300} triggerOnce>
       <h2>{t(title)}</h2>
       <Row gutter={[16, 16]}>
@@ -58,7 +58,7 @@ const CardContentBlock = ({ title, cards, t, direction }: CardContentBlockProps)
             >
               <CardTitleWrapper>
                 <CardTitle>{t(card.title)}</CardTitle>
-                <SvgIcon src={card.icon} width="60px" height="60px" />
+                <PngIconDoc src={card.icon} width="80px" height="80px" />
               </CardTitleWrapper>
               <CardText>{t(card.text)}</CardText>
               <ButtonWrapper>

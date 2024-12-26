@@ -69,6 +69,7 @@ export const CardTitle = styled("h6")`
 `;
 
 export const CardText = styled("p")`
+
   font-size: 16px;
   margin: 20px 0;
   color: #666;
@@ -100,9 +101,9 @@ export const CardButton = styled("a")`
 `;
 
 export const ButtonWrapper = styled("div")`
-  margin-top: auto; /* Ensures the button is pushed to the bottom */
+  margin: auto;
   display: flex;
-  justify-content: center; /* Centers the button horizontally */
-  margin-bottom: 20px; /* Adjust as needed for spacing between button and card */
+  justify-content: center;
+  padding:auto
 `;
 
