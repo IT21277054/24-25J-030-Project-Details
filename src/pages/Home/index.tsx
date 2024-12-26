@@ -23,18 +23,28 @@ const ProfileCardContentBlock = lazy(
   () => import("../../components/ProfileCardContentBlock")
 );
 
+const MainContentBlock = lazy(
+  () => import("../../components/MainContectBlock")
+);
+
+const MainContainer = lazy(
+  () => import("../../common/MainContainer")
+);
+
+
 const Home = () => {
   return (
-    <Container>
+    <MainContainer>
       <ScrollToTop />
-      <ContentBlock
+      <MainContentBlock
         direction="right"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="bg.png"
         id="intro"
       />
+      <Container>
       <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
@@ -45,14 +55,14 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="thinking.jpg"
         id="about"
       />
       <ContentBlock
         direction="right"
         title={ProjectIntroContent.title}
         content={ProjectIntroContent.text}
-        icon="product-launch.svg"
+        icon="introduction.png"
         id="projectIntro"
       />
       <CardContentBlock
@@ -67,8 +77,8 @@ const Home = () => {
         cards={ProjectPresentationContent.cards}
         id="projectPresentation"
       />
-      <ProjectMilestones title={"Project Milestones"} />
-      <ProjectDomain title={"Project Domain"} />
+      <ProjectMilestones title={"Project Milestones"} id="milestone"/>
+      <ProjectDomain title={"Project Domain"} id="domain"/>
       <ProfileCardContentBlock
         title={ProfieCardContent.title}
         cards={ProfieCardContent.cards}
@@ -78,7 +88,7 @@ const Home = () => {
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon="end.png"
         id="product"
       />
       <Contact
@@ -86,7 +96,8 @@ const Home = () => {
         content={ContactContent.text}
         id="contact"
       />
-    </Container>
+      </Container>
+    </MainContainer>
   );
 };
 

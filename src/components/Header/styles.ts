@@ -2,8 +2,23 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
-export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
+export const HeaderSection = styled("header")<{ scrolled: boolean }>`
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  padding: 0.5rem;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background change */
+
+  &.scrolled {
+    background-color: #102d4d; /* Solid background when scrolled */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to give depth */
+  }
 
   .ant-row-space-between {
     align-items: center;
@@ -41,7 +56,7 @@ export const Burger = styled("div")`
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: #102d4d;
   }
 `;
 
@@ -59,12 +74,12 @@ export const Menu = styled("h5")`
 
 export const CustomNavLinkSmall = styled(NavLink)`
   font-size: 1.2rem;
-  color: #18216d;
+  color: #fff;
   transition: color 0.2s ease-in;
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 1rem;
 
   @media only screen and (max-width: 768px) {
-    margin: 1.25rem 2rem;
+    margin: 1.25rem 1rem;
   }
 `;
 
@@ -88,8 +103,6 @@ export const Span = styled("span")`
   &:hover,
   &:active,
   &:focus {
-    color: rgb(255, 130, 92);
-    text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    color: #102d4d;
   }
 `;

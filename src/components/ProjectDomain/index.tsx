@@ -7,10 +7,11 @@ import { Container } from "../Block/styles";
 import "./ProjectDomain.scss";
 
 interface MiddleBlockProps {
+  id:string;
   title: string;
 }
 
-const ProjectDomain = ({ title }: MiddleBlockProps) => {
+const ProjectDomain = ({ title, id }: MiddleBlockProps) => {
   const [activeTab, setActiveTab] = useState<number>(1);
 
   const tabContent = [
@@ -117,7 +118,7 @@ const ProjectDomain = ({ title }: MiddleBlockProps) => {
   ];
 
   return (
-    <MiddleBlockSection>
+    <MiddleBlockSection id={id}>
       <Slide direction="up" triggerOnce>
         <Row justify="center" align="middle">
           <Container>

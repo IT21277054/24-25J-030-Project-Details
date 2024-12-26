@@ -2,46 +2,50 @@
     "title": "Team Members",
     "cards": [
       {
-        "name": "John Doe",
-        "role": "Frontend Developer",
+        "name": "Shamry Shiraz",
+        "role": "Researcher",
+        "designation": "Bachelor of Science (Hons) in Information Technology Specializing in Software Engineering",
         "socialLinks": {
-          "email": "https://github.com/johndoe",
-          "linkedin": "https://www.linkedin.com/in/johndoe",
-          "twitter": "https://twitter.com/johndoe",
-          "facebook": "https://twitter.com/johndoe"
+          "email": "mailto:shamryshiraz@gmail.com",
+          "linkedin": "https://www.linkedin.com/in/shamry-shiraz-0b80b21a9",
+          "twitter": "https://www.linkedin.com/in/shamry-shiraz-0b80b21a9",
+          "facebook": "https://www.facebook.com/share/18CNje4KW9/?mibextid=wwXIfr"
         },
         "avatar": "avatar.jpg"
       },
       {
-        "name": "Jane Smith",
-        "role": "Backend Developer",
+        "name": "Kaveesha Karunasena",
+        "role": "Researcher",
+        "designation": "Bachelor of Science (Hons) in Information Technology Specializing in Software Engineering",
         "socialLinks": {
-          "email": "https://github.com/johndoe",
-          "linkedin": "https://www.linkedin.com/in/johndoe",
-          "twitter": "https://twitter.com/johndoe",
-          "facebook": "https://twitter.com/johndoe"
+          "email": "mailto:kaveeshakarunasena@gmail.com",
+          "linkedin": "https://www.linkedin.com/in/kaveesha-karunasena/",
+          "twitter": "https://x.com/KaveeshaLa6162",
+          "facebook": "https://www.facebook.com/share/1BA9uZPH7C/?mibextid=wwXIfr"
         },
        "avatar": "avatar.jpg"
       },
       {
-        "name": "Jane Smith",
-        "role": "Backend Developer",
+        "name": "Oshadhi Kumarasinghe",
+        "role": "Researcher",
+        "designation": "Bachelor of Science (Hons) in Information Technology Specializing in Software Engineering",
         "socialLinks": {
-         "email": "https://github.com/johndoe",
-          "linkedin": "https://www.linkedin.com/in/johndoe",
+          "email": "https://github.com/johndoe",
+          "linkedin": "https://www.linkedin.com/in/oshadhi-anjana-kumarasinghe-a784aa213/",
           "twitter": "https://twitter.com/johndoe",
-          "facebook": "https://twitter.com/johndoe"
+          "facebook": "https://www.facebook.com/share/19iisrJyM3/?mibextid=wwXIfr"
         },
         "avatar": "avatar.jpg"
       },
       {
-        "name": "Jane Smith",
-        "role": "Backend Developer",
+        "name": "Hansani Mudelige",
+        "role": "Researcher",
+        "designation": "Bachelor of Science (Hons) in Information Technology Specializing in Software Engineering",
         "socialLinks": {
           "email": "https://github.com/johndoe",
-          "linkedin": "https://www.linkedin.com/in/johndoe",
-          "twitter": "https://twitter.com/johndoe",
-          "facebook": "https://twitter.com/johndoe"
+          "linkedin": "https://www.linkedin.com/in/hansani-mudelige-2a7776275/",
+          "twitter": "https://www.linkedin.com/in/hansani-mudelige-2a7776275/",
+          "facebook": "https://www.linkedin.com/in/hansani-mudelige-2a7776275/"
         },
         "avatar": "avatar.jpg"
       }

@@ -12,8 +12,12 @@ import {
   SocialIconsWrapper,
   SocialIcon,
   AvatarWrapper,
-  AvatarImage
+  AvatarImage,
+  CardRoleText
 } from './styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 interface ProfileCardContentBlockProps {
     id:string;
@@ -21,6 +25,7 @@ interface ProfileCardContentBlockProps {
   cards: Array<{
     name: string;
     role: string;
+    designation:string;
     socialLinks: {
       email: string;
       linkedin: string;
@@ -32,9 +37,9 @@ interface ProfileCardContentBlockProps {
   t: TFunction;
 }
 
-const ProfileCardContentBlock = ({ title, cards, t }: ProfileCardContentBlockProps) => {
+const ProfileCardContentBlock = ({ title, cards, t, id}: ProfileCardContentBlockProps) => {
   return (
-    <ContentSection>
+    <ContentSection id ={id}>
      {/* <Zoom duration={1000} delay={300} triggerOnce> */}
       <h2>{t(title)}</h2>
       <Row gutter={[16, 16]}>
@@ -46,24 +51,25 @@ const ProfileCardContentBlock = ({ title, cards, t }: ProfileCardContentBlockPro
                     <PngIcon src={card.avatar} width="100%" height="100%" />
                   <SocialIconsWrapper>
                     <a href={card.socialLinks.email} target="_blank" rel="noopener noreferrer">
-                      <SvgIcon src="github.svg" width="30px" height="30px" />
+                    <FontAwesomeIcon  icon={faEnvelope} style={{ fontSize: '20px' }} color="#6e6e6e"/>
                     </a>
                     <a href={card.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                      <SvgIcon src="linkedin.svg" width="30px" height="30px" />
+                    <FontAwesomeIcon  icon={faLinkedin} style={{ fontSize: '20px' }} color="#0a528a"/>
                     </a>
                     {card.socialLinks.twitter && (
                       <a href={card.socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-                        <SvgIcon src="twitter.svg" width="30px" height="30px" />
+                        <FontAwesomeIcon  icon={faTwitter} style={{ fontSize: '20px' }}color="#74C0FC"/>
                       </a>
                     )}
                     <a href={card.socialLinks.facebook} target="_blank" rel="noopener noreferrer">
-                      <SvgIcon src="twitter.svg" width="30px" height="30px" />
+                        <FontAwesomeIcon  icon={faFacebook}  style={{ fontSize: '20px' }}  color="#316FF6"/>
                     </a>
                   </SocialIconsWrapper>
                 </AvatarWrapper>
-                <CardTitle>{t(card.name)}</CardTitle>
-                <CardText>{t(card.role)}</CardText>
               </CardTitleWrapper>
+              <CardTitle>{t(card.name)}</CardTitle>
+              <CardRoleText>{t(card.role)}</CardRoleText>
+              <CardText>{t(card.designation)}</CardText>
             </CardWrapper>
           </Col>
         ))}

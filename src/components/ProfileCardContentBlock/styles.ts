@@ -41,6 +41,11 @@ export const CardText = styled("p")`
   color: #666;
 `;
 
+export const CardRoleText = styled("h6")`
+  font-size: 14px;
+  color: #666;
+`;
+
 export const AvatarWrapper = styled("div")`
   position: relative;
   margin-bottom: 10px;
@@ -54,7 +59,7 @@ export const AvatarImage = styled("img")`
 
 export const SocialIconsWrapper = styled("div")`
   display: flex;
-  gap: 30px;
+  gap: 20px;
   position: absolute;
   top: 120px;
   left: 50%;
@@ -66,9 +71,28 @@ export const SocialIconsWrapper = styled("div")`
   ${CardWrapper}:hover & {
     opacity: 1;
   }
+
+  a {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #DFF5FF;
+    }
+  }
 `;
 
 export const SocialIcon = styled("img")`
+  width: 20px;
+  height: 20px;
   transition: transform 0.3s ease;
 
   &:hover {
