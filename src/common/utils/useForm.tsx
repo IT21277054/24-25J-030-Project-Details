@@ -22,43 +22,45 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     errors: { ...initialValues },
   });
 
-  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const values = formState.values;
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    if (Object.values(errors).some((error) => error !== "")) {
+      return; 
+    }
+
+    const url = "";
 
     try {
-      if (Object.values(errors).every((error) => error === "")) {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
+      // const response = await fetch(url, {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(values),
+      // });
+
+      // if (!response.ok) {
+      //   notification["error"]({
+      //     message: "Error",
+      //     description:
+      //       "There was an error sending your message, please try again later.",
+      //   });
+      // } else {
+        (event.target as HTMLFormElement).reset();
+        setFormState({
+          values: { ...initialValues },
+          errors: { ...initialValues },
         });
 
-        if (!response.ok) {
-          notification["error"]({
-            message: "Error",
-            description:
-              "There was an error sending your message, please try again later.",
-          });
-        } else {
-          event.target.reset();
-          setFormState(() => ({
-            values: { ...initialValues },
-            errors: { ...initialValues },
-          }));
-
-          notification["success"]({
-            message: "Success",
-            description: "Your message has been sent!",
-          });
-        }
-      }
+        notification["success"]({
+          message: "Success",
+          description: "Your message has been sent!",
+        });
+      
     } catch (error) {
       notification["error"]({
         message: "Error",
