@@ -9,6 +9,7 @@ import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
+import emailjs from "emailjs-com";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
@@ -16,6 +17,35 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type as keyof typeof errors];
     return <Span>{ErrorMessage}</Span>;
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();  
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID || "",
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "",
+        {
+          name: values.name,
+          email: values.email,
+          message: values.message,
+        },
+         process.env.REACT_APP_EMAILJS_USER_ID || ""
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+        }
+      );
+  };
+
+ 
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    handleSubmit(e);
+    sendEmail(e);
   };
 
   return (
@@ -28,7 +58,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
-            <FormGroup autoComplete="off" onSubmit={handleSubmit}>
+            <FormGroup autoComplete="off" onSubmit={onSubmit}>
               <Col span={24}>
                 <Input
                   type="text"
@@ -41,7 +71,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <Input
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Your Email"
                   value={values.email || ""}

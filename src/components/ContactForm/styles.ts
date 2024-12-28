@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+
+export const Input = styled.input`
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;  // Change text color here (dark gray)
+  background-color: #fff;  // Ensure background is white or desired color
+  
+  &:focus {
+    outline: none;
+    border-color: #4f8a8b;  // Focus border color
+  }
+`;
+
 export const ContactContainer = styled("div")`
   padding: 5rem 0;
 

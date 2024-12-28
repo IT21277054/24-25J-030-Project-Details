@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")<{ scrolled: boolean }>`
-  position: fixed; /* Fix the header at the top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,8 +16,8 @@ export const HeaderSection = styled("header")<{ scrolled: boolean }>`
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background change */
 
   &.scrolled {
-    background-color: #102d4d; /* Solid background when scrolled */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to give depth */
+    background-color: #102d4d; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
   }
 
   .ant-row-space-between {
@@ -28,6 +28,7 @@ export const HeaderSection = styled("header")<{ scrolled: boolean }>`
 
 export const LogoContainer = styled(Link)`
   display: flex;
+  margin-left : -90px
 `;
 
 export const NavLink = styled("div")`
