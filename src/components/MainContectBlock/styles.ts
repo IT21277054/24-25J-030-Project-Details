@@ -11,7 +11,7 @@ export const ContentSection = styled("section")`
 `;
 
 export const IconBackground = styled.div<{ icon: string }>`
-  background-image: url(${({ icon }) => `/img/svg/${icon}`});
+  background-image: url(${({ icon }) => `./img/svg/${icon}`});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@ export const IconBackground = styled.div<{ icon: string }>`
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
-  
+
   & > div {
     position: relative;
     z-index: 2;
@@ -85,7 +85,7 @@ export const Content = styled("p")`
 export const MinTitle = styled("h2")`
   font-size: 13px;
   line-height: 1rem;
-  padding:0;
+  padding: 0;
   text-transform: uppercase;
   color: #000;
   font-family: "Motiva Sans Light", sans-serif;
@@ -94,7 +94,7 @@ export const MinTitle = styled("h2")`
 export const MinPara = styled("p")`
   font-size: 17px;
   text-align: justify;
-  margin:0;
+  margin: 0;
   color: #fff;
 `;
 
