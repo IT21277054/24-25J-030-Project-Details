@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/24-25J-030-Project-Details/static/css/main.18dfb25f.css",
-    "main.js": "/24-25J-030-Project-Details/static/js/main.daa46b2a.js",
+    "main.js": "/24-25J-030-Project-Details/static/js/main.a829e4c2.js",
     "static/css/84.da4ca21e.chunk.css": "/24-25J-030-Project-Details/static/css/84.da4ca21e.chunk.css",
-    "static/js/84.eb96a08f.chunk.js": "/24-25J-030-Project-Details/static/js/84.eb96a08f.chunk.js",
+    "static/js/84.1bf2e855.chunk.js": "/24-25J-030-Project-Details/static/js/84.1bf2e855.chunk.js",
     "static/js/274.39fcc241.chunk.js": "/24-25J-030-Project-Details/static/js/274.39fcc241.chunk.js",
     "static/js/281.4c241172.chunk.js": "/24-25J-030-Project-Details/static/js/281.4c241172.chunk.js",
     "static/js/722.6d3549ef.chunk.js": "/24-25J-030-Project-Details/static/js/722.6d3549ef.chunk.js",
@@ -19,9 +19,9 @@
     "static/js/514.90516630.chunk.js": "/24-25J-030-Project-Details/static/js/514.90516630.chunk.js",
     "index.html": "/24-25J-030-Project-Details/index.html",
     "main.18dfb25f.css.map": "/24-25J-030-Project-Details/static/css/main.18dfb25f.css.map",
-    "main.daa46b2a.js.map": "/24-25J-030-Project-Details/static/js/main.daa46b2a.js.map",
+    "main.a829e4c2.js.map": "/24-25J-030-Project-Details/static/js/main.a829e4c2.js.map",
     "84.da4ca21e.chunk.css.map": "/24-25J-030-Project-Details/static/css/84.da4ca21e.chunk.css.map",
-    "84.eb96a08f.chunk.js.map": "/24-25J-030-Project-Details/static/js/84.eb96a08f.chunk.js.map",
+    "84.1bf2e855.chunk.js.map": "/24-25J-030-Project-Details/static/js/84.1bf2e855.chunk.js.map",
     "274.39fcc241.chunk.js.map": "/24-25J-030-Project-Details/static/js/274.39fcc241.chunk.js.map",
     "281.4c241172.chunk.js.map": "/24-25J-030-Project-Details/static/js/281.4c241172.chunk.js.map",
     "722.6d3549ef.chunk.js.map": "/24-25J-030-Project-Details/static/js/722.6d3549ef.chunk.js.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.18dfb25f.css",
-    "static/js/main.daa46b2a.js"
+    "static/js/main.a829e4c2.js"
   ]
 }
