@@ -85,7 +85,7 @@ export const SocialIconsWrapper = styled("div")`
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #DFF5FF;
+      background-color: #dff5ff;
     }
   }
 `;

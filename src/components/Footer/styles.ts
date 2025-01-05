@@ -76,7 +76,7 @@ export const Chat = styled("p")`
 
   &:hover {
     border-bottom: 1px solid #102d4d;
-    color:#102d4d;
+    color: #102d4d;
   }
 `;
 

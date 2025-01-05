@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
-import { PngIcon, SvgIcon } from "../../common/SvgIcon";
-import { Button } from "../../common/Button";
+import { PngIcon } from "../../common/SvgIcon";
 import {
   HeaderSection,
   LogoContainer,
@@ -67,8 +66,8 @@ const Header = ({ t }: { t: TFunction }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("domain")}>
           <Span>{t("Domain")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("achievements")}>
-          <Span>{t("Achievements")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("imageBlock")}>
+          <Span>{t("Group Images")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("profileCard")}>
           <Span>{t("Team")}</Span>
