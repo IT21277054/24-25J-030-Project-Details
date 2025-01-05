@@ -31,7 +31,7 @@ const ImageBlock = ({ title, id, images }: MiddleBlockProps) => {
                 <div
                   style={{
                     ...contentStyle,
-                    backgroundImage: `url('img/icons/${image.url}')`,
+                    backgroundImage: `url('./img/icons/${image.url}')`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
