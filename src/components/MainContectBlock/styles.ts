@@ -13,10 +13,10 @@ export const ContentSection = styled("section")`
 export const IconBackground = styled.div<{ icon: string }>`
   background-image: url(${({ icon }) => `./img/svg/${icon}`});
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   background-repeat: no-repeat;
   position: relative;
-  width: 100%;
+  width: 101%;
   height: 100%;
   min-height: 700px;
 
