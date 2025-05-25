@@ -1,0 +1,59 @@
+{
+  "title": "Project Documents",
+  "cards": [
+    {
+      "title": "TAF Document",
+      "text": "Download the Project Charter document that outlines the overall objectives, goals, and scope of the project. This document serves as a foundational reference for the project's direction and progress.",
+      "icon": "taf.png",
+      "button": {
+        "title": "Download",
+        "url": "https://drive.google.com/drive/folders/1kznqrL03SYempN5JB7JYBaAVskygwNxI?usp=sharing"
+      }
+    },
+    {
+      "title": "Project Proposal",
+      "text": "Download the Project Proposal document which details the plan for the project, including the methodology, timeline, resources, and expected deliverables. This document is crucial for project approval and stakeholder alignment.",
+      "icon": "proposal.png",
+      "button": {
+        "title": "Download",
+        "url": "https://drive.google.com/drive/folders/1jkexrAXwoYhQnxczHCFFjnFuTKO37cMT?usp=sharing"
+      }
+    },
+    {
+      "title": "Research Paper",
+      "text": "Download the Research Paper that presents the in-depth study, analysis, and findings related to the project's key themes. It provides valuable insights and data gathered through research during the project.",
+      "icon": "paper.png",
+      "button": {
+        "title": "Download",
+        "url": "https://drive.google.com/drive/folders/1i1x8p9ZJrEuSwufFEQmzsclyFp1Y1LS7?usp=sharing"
+      }
+    },
+    {
+      "title": "Final Thesis",
+      "text": "Download the Final Thesis document, which is the culmination of all research, analysis, and project work. This thesis summarizes the project’s results, conclusions, and recommendations for future work.",
+      "icon": "thesis.png",
+      "button": {
+        "title": "Download",
+        "url": "https://drive.google.com/drive/folders/1l5iwwSjfUB_pGDbtffcS26UdfnDFWX9i?usp=sharing"
+      }
+    },
+    {
+      "title": "Check Lists",
+      "text": "Download the Status Document which provides periodic updates on the project's progress. It includes milestones, achievements, challenges, and any adjustments made to the project’s plan.",
+      "icon": "checkList.png",
+      "button": {
+        "title": "Download",
+        "url": "https://drive.google.com/drive/folders/1rEOh-e8_Poa_h9bA2IwUwFibwuFfYY1p?usp=sharing"
+      }
+    },
+    {
+      "title": "Research Logbook",
+      "text": "Download the Research Logbook that contains detailed records of research activities, observations, and notes. It helps track the progress of the research and any significant discoveries made during the project.",
+      "icon": "logBook.png",
+      "button": {
+        "title": "Download",
+        "url": "/services/service-six"
+      }
+    }
+  ]
+}
