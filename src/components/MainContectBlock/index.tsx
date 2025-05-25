@@ -38,7 +38,7 @@ const ContentBlock = ({
         <Col span={24}>
           <IconBackground icon={icon}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              <h6 style={{ color: "white" }}>{t(title)}</h6>
               {id === "projectIntro" ? (
                 <MinPara>{t(content)}</MinPara>
               ) : (

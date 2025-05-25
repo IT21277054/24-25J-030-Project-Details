@@ -14,9 +14,14 @@ interface MiddleBlockProps {
 const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: elementPosition - 150,
+        behavior: "smooth",
+      });
+    }
   };
   return (
     <MiddleBlockSection>

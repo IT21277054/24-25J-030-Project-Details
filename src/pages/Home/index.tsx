@@ -6,6 +6,7 @@ import ProjectIntroContent from "../../content/ProjectIntroContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import ImageBlockContent from "../../content/ImageBlockContent.json";
+import ScreenShot from "../../content/ScreenShot.json";
 import ProjectDocContetnt from "../../content/ProjectDocContetnt.json";
 import ProjectPresentationContent from "../../content/ProjectPresentationContent.json";
 import ProjectDomainContent from "../../content/ProjectDomainContent.json";
@@ -76,6 +77,11 @@ const Home = () => {
           title={ProjectPresentationContent.title}
           cards={ProjectPresentationContent.cards}
           id="projectPresentation"
+        />
+        <ImageBlock
+          title={ScreenShot.title}
+          id="screenShots"
+          images={ScreenShot.images}
         />
         <ProjectMilestones title={"Project Milestones"} id="milestone" />
         <ProjectDomain

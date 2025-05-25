@@ -96,3 +96,42 @@ input[type="radio"]:checked + label {
     transform: scale(0.6);
   }
 }
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw; // force it to take full viewport width
+  margin-left: calc(-50vw + 50%); // counter any container centering
+  padding: 1rem 0;
+  background-color: #fff;
+
+  .slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    padding: 0 2rem;
+
+    img {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    &.large img {
+      height: 100px;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

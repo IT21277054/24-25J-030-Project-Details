@@ -41,11 +41,33 @@ const Header = ({ t }: { t: TFunction }) => {
   const MenuItem = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
+      if (element) {
+        const elementPosition =
+          element.getBoundingClientRect().top + window.pageYOffset;
+
+        const offsets: { [key: string]: number } = {
+          about: 150,
+          projectIntro: 150,
+          projectDoc: -10,
+          projectPresentation: -10,
+          milestone: 40,
+          screenShots: -20,
+          domain: 50,
+          imageBlock: 5,
+          profileCard: 100,
+          contact: 100,
+        };
+
+        const offset = offsets[id] || 100;
+
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: "smooth",
+        });
+      }
       setVisibility(false);
     };
+
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
@@ -62,6 +84,9 @@ const Header = ({ t }: { t: TFunction }) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("milestone")}>
           <Span>{t("Milestone")}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => scrollTo("screenShots")}>
+          <Span>{t("Screen Shots")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("domain")}>
           <Span>{t("Domain")}</Span>
@@ -84,7 +109,9 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <PngIcon src="logo6.png" width="170px" height="90px" />
+            <div style={{ padding: "5px" }}>
+              <PngIcon src="logo6.png" width="50px" height="50px" />
+            </div>
           </LogoContainer>
           <NotHidden>
             <MenuItem />

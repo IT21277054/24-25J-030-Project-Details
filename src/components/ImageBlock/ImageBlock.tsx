@@ -23,7 +23,14 @@ const ImageBlock = ({ title, id, images }: MiddleBlockProps) => {
             <h6>{title}</h6>
           </Container>
         </Row>
-        <div style={{ borderRadius: 10, overflow: "hidden" }}>
+        <div
+          style={{
+            borderRadius: 10,
+            overflow: "hidden",
+            width: "80%",
+            margin: "0 auto",
+          }}
+        >
           {" "}
           <Carousel autoplay>
             {images.map((image, index) => (

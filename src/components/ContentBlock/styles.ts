@@ -25,7 +25,6 @@ export const StyledRow = styled(Row)`
 
 export const ContentWrapper = styled("div")`
   position: relative;
-  max-width: 540px;
 
   @media only screen and (max-width: 575px) {
     padding-top: 4rem;
@@ -49,7 +48,7 @@ export const MinTitle = styled("h6")`
 
 export const MinPara = styled("p")`
   font-size: 17px;
-   text-align: justify;
+  text-align: justify;
 `;
 
 export const ButtonWrapper = styled("div")`
@@ -65,4 +64,3 @@ export const ButtonWrapper = styled("div")`
     margin-left: 20px;
   }
 `;
-

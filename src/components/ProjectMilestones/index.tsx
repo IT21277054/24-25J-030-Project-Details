@@ -6,7 +6,7 @@ import { MiddleBlockSection, ContentWrapper } from "./styles";
 import "./ProjectMilestones.scss";
 
 interface MiddleBlockProps {
-  id:string
+  id: string;
   title: string;
 }
 
@@ -57,9 +57,9 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                 <ul>
                   <li>
                     <div>
-                      <time>July 2024</time>
+                      <time>Aug 16th 2024</time>
                       <div className="discovery">
-                        <h1>PROPOSAL PRESENTATION</h1>
+                        <h1>PROJECT PROPOSAL</h1>
                         <h2>
                           Showcase and the delivery of the project proposal.
                         </h2>
@@ -68,9 +68,9 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                   </li>
                   <li>
                     <div>
-                      <time>Nov 2024</time>
+                      <time>Dec 4th 2024</time>
                       <div className="discovery">
-                        <h1>PROGRESS PRESENTATION</h1>
+                        <h1>PROGRESS PRESENTATION 1</h1>
                         <h2>
                           Showcase of the actual features with an estimated
                           implementation of 50%.
@@ -80,9 +80,9 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                   </li>
                   <li>
                     <div>
-                      <time>April/May 2025</time>
+                      <time>Mar 18th 2025</time>
                       <div className="discovery">
-                        <h1>PROGRESS PRESENTATION</h1>
+                        <h1>PROGRESS PRESENTATION 2</h1>
                         <h2>
                           Showcase of the actual features with an estimated
                           implementation of 90%.
@@ -92,9 +92,18 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                   </li>
                   <li>
                     <div>
-                      <time>April/May 2025</time>
+                      <time>May 26th 2025</time>
                       <div className="discovery">
-                        <h1>FINAL PRESENTATION</h1>
+                        <h1>FINAL ASSESSMENT</h1>
+                        <h2>Showcase of the final product.</h2>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>May 26th 2025</time>
+                      <div className="discovery">
+                        <h1>Final Viva</h1>
                         <h2>Showcase of the final product.</h2>
                       </div>
                     </div>
