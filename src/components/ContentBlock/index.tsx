@@ -41,10 +41,24 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          {icon === 'none' ? ( "") : (<Col lg={11} md={11} sm={12} xs={24}>
-            <PngIcon src={icon} width="100%" height="100%" />
-          </Col>)}
-          
+          {icon === "none" ? (
+            ""
+          ) : (
+            <Col
+              lg={11}
+              md={11}
+              sm={12}
+              xs={24}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <PngIcon src={icon} width="60%" height="70%" />
+            </Col>
+          )}
+
           <Col
             lg={icon === "none" ? 24 : 11}
             md={icon === "none" ? 24 : 11}
@@ -53,8 +67,12 @@ const ContentBlock = ({
           >
             <ContentWrapper>
               <h6>{t(title)}</h6>
-              {id === 'projectIntro' ? ( <MinPara>{t(content)}</MinPara>) : (<Content>{t(content)}</Content>)}
-             
+              {id === "projectIntro" ? (
+                <MinPara>{t(content)}</MinPara>
+              ) : (
+                <Content>{t(content)}</Content>
+              )}
+
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&
