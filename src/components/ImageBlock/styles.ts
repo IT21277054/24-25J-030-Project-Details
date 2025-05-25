@@ -1,5 +1,5 @@
 export const contentStyle: React.CSSProperties = {
-  height: "720px",
+  height: "550px",
   lineHeight: "160px",
   textAlign: "center",
   background: "linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6))",
