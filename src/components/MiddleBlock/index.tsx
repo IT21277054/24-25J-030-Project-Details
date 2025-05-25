@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
-import { MiddleBlockSection, Content, ContentWrapper, ImageWrapper, StyledImage } from "./styles";
+import { MiddleBlockSection, Content, ContentWrapper, ImageWrapper } from "./styles";
 import { PngIcon, SvgIcon } from "../../common/SvgIcon"
 
 interface MiddleBlockProps {
@@ -27,24 +27,25 @@ const MiddleBlock = ({ title, content, button, t, icon }: MiddleBlockProps) => {
   };
 
   return (
-    <MiddleBlockSection>
+   <MiddleBlockSection>
   <Slide direction="up" triggerOnce>
     <Row align="middle" gutter={[16, 16]}>
-      <Col lg={12} md={24} sm={24} xs={24}>
-        <ImageWrapper>
-         <PngIcon src={icon} width="120%" height="140%" />
-        </ImageWrapper>
-      </Col>
+      {/* Content FIRST */}
       <Col lg={12} md={24} sm={24} xs={24}>
         <ContentWrapper>
-          <h6>{t(title)}</h6>
-         {t(content)
+          <h6>{t(title)
   .split("\n")
   .filter(line => line.trim() !== "")
   .map((line, index) => (
-    <Content key={index}>{line}</Content>
-))}
-
+    <h6 key={index}>{line}</h6>
+))}</h6>
+          {t(content)
+            .split("\n")
+            .filter((line) => line.trim() !== "")
+            .map((line, index) => (
+              <Content key={index}>{line}</Content>
+            ))}
+          {/* Uncomment if button needed */}
           {/* {button && (
             <Button name="submit" onClick={() => scrollTo("projectIntro")}>
               {t(button)}
@@ -52,9 +53,17 @@ const MiddleBlock = ({ title, content, button, t, icon }: MiddleBlockProps) => {
           )} */}
         </ContentWrapper>
       </Col>
+
+      {/* Image SECOND */}
+      <Col lg={12} md={24} sm={24} xs={24}>
+        <ImageWrapper>
+          <PngIcon src={icon} width="100%" height="100%" />
+        </ImageWrapper>
+      </Col>
     </Row>
   </Slide>
 </MiddleBlockSection>
+
 
   );
 };

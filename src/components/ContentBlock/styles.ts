@@ -13,11 +13,14 @@ export const ContentSection = styled("section")`
 export const Content = styled("p")`
   margin-bottom: 8px; /* reduce spacing */
   line-height: 1.5;
+  font-size: 17px;
+  text-align: justify;
 `;
 
 export const AboutContent = styled("p")`
  margin-bottom: 8px; /* reduce spacing */
   line-height: 1.5;
+  font-size: 17px;
 `;
 
 export const StyledRow = styled(Row)`

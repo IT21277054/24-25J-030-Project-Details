@@ -16,6 +16,7 @@ export const Content = styled("p")`
  text-align: left;
   margin-bottom: 8px; /* reduce spacing */
   line-height: 1.5;
+  text-align: justify;
 `;
 
 export const ContentWrapper = styled.div`
@@ -32,13 +33,5 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem; /* Less padding to reduce margin */
-`;
-
-export const StyledImage = styled.img`
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  padding-top:7rem /* Less padding to reduce margin */
 `;
