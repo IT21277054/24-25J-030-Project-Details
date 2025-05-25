@@ -59,8 +59,12 @@ export const Styles = createGlobalStyle`
     h6 {
         font-family: 'Motiva Sans Bold', serif;
         color: #102D4D;
-        font-size: 56px;
+        font-size: 60px;
         line-height: 1.18;
+
+        @media only screen and (max-width: 1700px) {
+            font-size: 40px;
+        }
 
         @media only screen and (max-width: 890px) {
           font-size: 47px;

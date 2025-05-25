@@ -79,6 +79,10 @@ export const CustomNavLinkSmall = styled(NavLink)`
   transition: color 0.2s ease-in;
   margin: 0.5rem 1rem;
 
+  @media only screen and (max-width: 1700px) {
+    font-size: 1rem;
+  }
+
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 1rem;
   }
