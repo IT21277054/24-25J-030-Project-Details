@@ -27,7 +27,7 @@ const ImageBlock = ({ title, id, images }: MiddleBlockProps) => {
           style={{
             borderRadius: 10,
             overflow: "hidden",
-            width: "80%",
+            width: "100%",
             margin: "0 auto",
           }}
         >
