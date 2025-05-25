@@ -45,7 +45,10 @@ const ContentBlock = ({
             ""
           ) : (
             <Col lg={11} md={11} sm={12} xs={24}>
-              <PngIcon src={icon} width="70%" height="70%" />
+              {(id === "projectIntro" || id === "product") ? (
+               <PngIcon src={icon} width="100%" height="100%" />
+              ) : ( <PngIcon src={icon} width="60%" height="60%" />)}
+              
 
               {direction !== "right" && (
                 <ServiceWrapper>

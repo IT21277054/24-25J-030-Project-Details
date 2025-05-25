@@ -1,8 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { Zoom } from "react-awesome-reveal";
 import { withTranslation, TFunction } from "react-i18next";
-import { PngIcon, SvgIcon } from "../../common/SvgIcon";
+import { PngIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
   CardWrapper,
@@ -10,9 +9,7 @@ import {
   CardTitle,
   CardText,
   SocialIconsWrapper,
-  SocialIcon,
   AvatarWrapper,
-  AvatarImage,
   CardRoleText,
 } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,9 +46,8 @@ const ProfileCardContentBlock = ({
 }: ProfileCardContentBlockProps) => {
   return (
     <ContentSection id={id}>
-      {/* <Zoom duration={1000} delay={300} triggerOnce> */}
       <h2>{t(title)}</h2>
-      <Row gutter={[16, 16]}>
+      <Row gutter={[16, 16]} justify="center">
         {cards.map((card, index) => (
           <Col key={index} xs={24} sm={12} md={6}>
             <CardWrapper>
@@ -60,9 +56,10 @@ const ProfileCardContentBlock = ({
                   <PngIcon src={card.avatar} width="100%" height="100%" />
                   <SocialIconsWrapper>
                     <a
-                      href={card.socialLinks.email}
+                      href={`mailto:${card.socialLinks.email}`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Email"
                     >
                       <FontAwesomeIcon
                         icon={faEnvelope}
@@ -74,6 +71,7 @@ const ProfileCardContentBlock = ({
                       href={card.socialLinks.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="LinkedIn"
                     >
                       <FontAwesomeIcon
                         icon={faLinkedin}
@@ -86,6 +84,7 @@ const ProfileCardContentBlock = ({
                         href={card.socialLinks.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Twitter"
                       >
                         <FontAwesomeIcon
                           icon={faTwitter}
@@ -98,6 +97,7 @@ const ProfileCardContentBlock = ({
                       href={card.socialLinks.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Facebook"
                     >
                       <FontAwesomeIcon
                         icon={faFacebook}
@@ -107,15 +107,14 @@ const ProfileCardContentBlock = ({
                     </a>
                   </SocialIconsWrapper>
                 </AvatarWrapper>
+                <CardTitle>{card.name}</CardTitle>
+                <CardRoleText>{card.role}</CardRoleText>
+                <CardText>{card.designation}</CardText>
               </CardTitleWrapper>
-              <CardTitle>{t(card.name)}</CardTitle>
-              <CardRoleText>{t(card.role)}</CardRoleText>
-              <CardText>{t(card.designation)}</CardText>
             </CardWrapper>
           </Col>
         ))}
       </Row>
-      {/* </Zoom> */}
     </ContentSection>
   );
 };

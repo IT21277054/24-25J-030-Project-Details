@@ -37,7 +37,7 @@ const ImageBlock = ({ title, id, images }: MiddleBlockProps) => {
           style={{
             borderRadius: 10,
             overflow: "hidden",
-            width: "100%",
+            width: "75%",
             margin: "0 auto",
           }}
         >
@@ -46,12 +46,23 @@ const ImageBlock = ({ title, id, images }: MiddleBlockProps) => {
             {images.map((image, index) => (
               <div key={index}>
                 <div
-                  style={{
-                    ...contentStyle,
-                    backgroundImage: `url('./img/icons/${image.url}')`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
+                  style={
+                    id === "screenShots"
+                      ? {
+                          ...contentStyle,
+                          backgroundImage: `url('./img/icons/${image.url}')`,
+                          backgroundSize: "contain",
+                          backgroundRepeat: "no-repeat",
+                          backgroundColor: "#fff",
+                          backgroundPosition: "center",
+                        }
+                      : {
+                          ...contentStyle,
+                          backgroundImage: `url('./img/icons/${image.url}')`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }
+                  }
                 ></div>
               </div>
             ))}

@@ -48,6 +48,30 @@
         "facebook": "https://www.linkedin.com/in/hansani-mudelige-2a7776275/"
       },
       "avatar": "memeber_4.png"
+    },
+    {
+      "name": "Prof. Dasuni Nawinna",
+      "role": "Supervisor",
+      "designation": "Associate Dean Computer Systems Engineering - Computing (FOC)",
+      "socialLinks": {
+        "email": "mailto:dasuni.n@sliit.lk",
+        "linkedin": "https://www.linkedin.com/in/dasuni-nawinna-48a4907/",
+        "twitter": "",
+        "facebook": ""
+      },
+      "avatar": "supervisor_1.png"
+    },
+    {
+      "name": "Mr. Jeewaka Perera",
+      "role": "Co Supervisor",
+      "designation": "Lecturer Computer Science and Software Engineering - Computing (FOC)",
+      "socialLinks": {
+        "email": "mailto:jeewaka.p@sliit.lk",
+        "linkedin": "https://www.linkedin.com/in/jeewakaperera/",
+        "twitter": "",
+        "facebook": ""
+      },
+      "avatar": "supervisor_2.png"
     }
   ]
 }
