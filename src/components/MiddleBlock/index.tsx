@@ -32,7 +32,7 @@ const MiddleBlock = ({ title, content, button, t, icon }: MiddleBlockProps) => {
     <Row align="middle" gutter={[16, 16]}>
       <Col lg={12} md={24} sm={24} xs={24}>
         <ImageWrapper>
-         <PngIcon src="/1.png" width="100%" height="100%" />
+         <PngIcon src={icon} width="120%" height="140%" />
         </ImageWrapper>
       </Col>
       <Col lg={12} md={24} sm={24} xs={24}>
