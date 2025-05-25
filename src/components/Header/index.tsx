@@ -48,12 +48,12 @@ const Header = ({ t }: { t: TFunction }) => {
         const offsets: { [key: string]: number } = {
           about: 150,
           projectIntro: 150,
-          projectDoc: -10,
-          projectPresentation: -10,
-          milestone: 40,
-          screenShots: -20,
-          domain: 50,
-          imageBlock: 5,
+          projectDoc: 100,
+          projectPresentation: 100,
+          milestone: 20,
+          screenShots: 100,
+          domain: 20,
+          imageBlock: 100,
           profileCard: 100,
           contact: 100,
         };
