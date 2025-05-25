@@ -1,4 +1,4 @@
-import styled,{ keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 interface CardWrapperProps {
   width?: string;
@@ -16,10 +16,9 @@ const zoomIn = keyframes`
   }
 `;
 
-
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 0 0 8rem;
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
@@ -53,7 +52,6 @@ export const CardWrapper = styled("div")<CardWrapperProps>`
   }
 `;
 
-
 export const CardTitleWrapper = styled("div")`
   display: flex;
   flex-direction: column;
@@ -69,7 +67,6 @@ export const CardTitle = styled("h6")`
 `;
 
 export const CardText = styled("p")`
-
   font-size: 16px;
   margin: 20px 0;
   color: #666;
@@ -95,8 +92,8 @@ export const CardButton = styled("a")`
   &:active,
   &:focus {
     color: #fff;
-    border: 1px solid #4072AF;
-    background-color: #4072AF;
+    border: 1px solid #4072af;
+    background-color: #4072af;
   }
 `;
 
@@ -104,6 +101,5 @@ export const ButtonWrapper = styled("div")`
   margin: auto;
   display: flex;
   justify-content: center;
-  padding:auto
+  padding: auto;
 `;
-

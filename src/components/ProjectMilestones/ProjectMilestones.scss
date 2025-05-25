@@ -17,6 +17,13 @@ body {
 }
 
 .timeline {
+  .discovery {
+    .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
   ul {
     li {
       list-style-type: none;

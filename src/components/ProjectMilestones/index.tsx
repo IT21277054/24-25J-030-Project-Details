@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, Tag } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { useEffect, useRef } from "react";
@@ -59,10 +59,8 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                     <div>
                       <time>Aug 16th 2024</time>
                       <div className="discovery">
-                        <h1>PROJECT PROPOSAL</h1>
-                        <h2>
-                          Showcase and the delivery of the project proposal.
-                        </h2>
+                        <h1>Project Proposal</h1>
+                        <h2>Showcase and delivery of the project proposal.</h2>
                       </div>
                     </div>
                   </li>
@@ -70,7 +68,7 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                     <div>
                       <time>Dec 4th 2024</time>
                       <div className="discovery">
-                        <h1>PROGRESS PRESENTATION 1</h1>
+                        <h1>Progress Presentation 1</h1>
                         <h2>
                           Showcase of the actual features with an estimated
                           implementation of 50%.
@@ -80,9 +78,21 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                   </li>
                   <li>
                     <div>
+                      <time>Dec 4th 2024</time>
+                      <div className="discovery">
+                        <h1>Status Documents</h1>
+                        <h2>
+                          Check List 1 - Dec 08th Check List 2 - Mar 18th Check
+                          List 3 - May 26th
+                        </h2>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
                       <time>Mar 18th 2025</time>
                       <div className="discovery">
-                        <h1>PROGRESS PRESENTATION 2</h1>
+                        <h1>Progress Presentation 2</h1>
                         <h2>
                           Showcase of the actual features with an estimated
                           implementation of 90%.
@@ -92,10 +102,19 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                   </li>
                   <li>
                     <div>
-                      <time>May 26th 2025</time>
+                      <time>Apr 11th 2025</time>
                       <div className="discovery">
-                        <h1>FINAL ASSESSMENT</h1>
-                        <h2>Showcase of the final product.</h2>
+                        <h1>Final Reports</h1>
+                        <h2>Publish the final report.</h2>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>Mar 18th 2025</time>
+                      <div className="discovery">
+                        <h1>Research Paper Publication</h1>
+                        <h2>Published the Research Paper in a Conference.</h2>
                       </div>
                     </div>
                   </li>
@@ -104,6 +123,15 @@ const ProjectMilestones = ({ title, id }: MiddleBlockProps) => {
                       <time>May 26th 2025</time>
                       <div className="discovery">
                         <h1>Final Viva</h1>
+                        <h2>Showcase of the final product.</h2>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>May 26th 2025</time>
+                      <div className="discovery">
+                        <h1>Final Assessment</h1>
                         <h2>Showcase of the final product.</h2>
                       </div>
                     </div>

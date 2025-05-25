@@ -85,7 +85,7 @@ input[type="radio"]:checked + label {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
-              0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    0 6px 12px 0 rgba(24, 94, 224, 0.15);
   border-radius: 10px;
   font-size: 1rem;
   line-height: 1.5;
@@ -116,7 +116,6 @@ input[type="radio"]:checked + label {
   }
 }
 
-
 @media (max-width: 700px) {
   .tabs {
     transform: scale(0.6);
@@ -125,10 +124,10 @@ input[type="radio"]:checked + label {
 .slider-container {
   position: relative;
   overflow: hidden;
-  width: 100vw; // force it to take full viewport width
-  margin-left: calc(-50vw + 50%); // counter any container centering
-  padding: 1rem 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   background-color: #fff;
+  margin-bottom: 100px;
 
   .slider-track {
     display: flex;
